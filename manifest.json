@@ -1,0 +1,19 @@
+{
+  "name": "Great App Name",
+  "description": "Pithy description (132 characters or less, no HTML)",
+  "version": "0.0.0.1",
+  "manifest_version": 2, // keep it this way
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "permissions": ["storage", "activeTab"],
+  "page_action": {
+    "default_popup": "popup.html", // Oben rechts
+    "default_icon": {
+      "128": "images/logo128.png" // Source: CC, https://piq.codeus.net/picture/429839/PICKLE-RICK!-(Rick-and-Morty)
+    }
+  },
+  "default_icons": {
+    "128": "images/get_started128.png"
+  }
+}
