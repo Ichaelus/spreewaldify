@@ -1,19 +1,29 @@
 {
-  "name": "Great App Name",
-  "description": "Pithy description (132 characters or less, no HTML)",
+  "name": "Spreewaldify",
+  "description": "Record your browser interactions and generate corresponding Spreewald cucumber steps",
   "version": "0.0.0.1",
-  "manifest_version": 2, // keep it this way
-  "icons": {
-    "128": "icon_128.png"
-  },
-  "permissions": ["storage", "activeTab"],
+  "manifest_version": 2,
+  "permissions": ["activeTab", "declarativeContent", "storage"],
   "page_action": {
-    "default_popup": "popup.html", // Oben rechts
+    "default_popup": "action/popup.html",
     "default_icon": {
-      "128": "images/logo128.png" // Source: CC, https://piq.codeus.net/picture/429839/PICKLE-RICK!-(Rick-and-Morty)
+      "16": "images/logo/converted/favicon-16x16.png",
+      "32": "images/logo/converted/favicon-32x32.png",
+      "192": "images/logo/converted/android-chrome-192x192.png",
+      "384": "images/logo/converted/android-chrome-384x384.png",
+      "400": "images/logo/logo.png"
     }
   },
-  "default_icons": {
-    "128": "images/get_started128.png"
-  }
+  "icons": {
+    "16": "images/logo/converted/favicon-16x16.png",
+    "32": "images/logo/converted/favicon-32x32.png",
+    "192": "images/logo/converted/android-chrome-192x192.png",
+    "384": "images/logo/converted/android-chrome-384x384.png",
+    "400": "images/logo/logo.png"
+  },
+  "background": {
+    "scripts": ["background/background.js"],
+    "persistent": false
+  },
+  "options_page": "option/options.html"
 }
